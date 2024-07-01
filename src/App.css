@@ -3,6 +3,7 @@
     --text-primary: rgb(255, 255, 255);
     --text-heading: rgb(7, 7, 50);
     --text-secondary: rgb(223, 219, 219);
+    --text-heading: rgb(117, 116, 116);
     --accent: purple;
     --hero-background: linear-gradient(to right, #E9E4F0, #D3CCE3);
   }
@@ -22,6 +23,9 @@
         --weight--700: 700;
         --weight--800: 800;
       }
+ 
+ 
+ 
   /* commen classes */
   .flex{
     display: flex;
@@ -43,32 +47,36 @@
     align-items: center;
     justify-content: space-evenly;
   }
-/* masthead-section */
+
+
+  /* masthead-section */
 .imglogo{
     width:15rem;
+    
 }
 .logo-sec{
     text-align: center;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.4)
+   
 }
+
 .head-container{
     height: 100dvh;
     width: 100dvw;
     background-position: center;
     background-repeat:no-repeat;
     background-size: cover;
-    animation: change 50s infinite ease-in-out;
+    animation: change 40s infinite ease;
+    
 }
 @keyframes change{
     0%{
-        background-image:url(./assets/heroimg.jpg) ;
+        background-image : linear-gradient(to bottom,rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.73)) , url(./assets/heroimg.jpg) ;
     }
     50%{
-        background-image:url(./assets/heroimg2.jpg) ;
+        background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.73)) , url(./assets/heroimg2.jpg) ;
     }
     100%{
-        background-image:url(./assets/heroimg.jpg) ;
+        background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.73)) , url(./assets/heroimg.jpg) ;
     }
 }
 
@@ -95,6 +103,7 @@
     color: var(--text-secondary);
     font-weight: var(--weight--600);
 }
+/* media querys */
 @media only screen and (max-width: 500px){
     .main-header{
     font-size: var(--font-2);
@@ -111,4 +120,30 @@
 .margin-top{
   margin-top: 50px;
 }
+.partner-logos-container{
+  flex-direction: column;
+}
+}
+
+/* our partners logo */
+.partnerlogo{
+   width: fit-content;
+   height: 7rem;
+}
+.partner-header{
+  text-align: center;
+  font-size: var(--font-2);
+  font-weight: var(--weight--600);
+  color:var(--text-heading);
+}
+.partner-logos-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 70px;
+  padding: 7px;
+}
+.partner-container{
+  margin:  10px 20px ;
 }
