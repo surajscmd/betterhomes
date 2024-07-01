@@ -9,7 +9,7 @@ const Headsec = () => {
         <div className='mainheader-sec'>
           <p className='main-header'>Find better homes, apartments and row houses with Better Homes Realty.</p>
           <p className='sub-main-header'>We bring you a collection of handpicked homes for its exceptional quality, architectural brilliance,& attention to details.</p>
-          <p className='sub-main-header margin-top'>Call us on - 888 444 272</p>
+          <p className='margin-top'>Call us on - 888 444 272</p>
         </div>
     </div>
   )

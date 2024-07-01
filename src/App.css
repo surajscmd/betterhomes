@@ -82,7 +82,7 @@
 
 .main-header{
     font-size: var(--font-4);
-    font-weight: var(--weight--600);
+    font-weight: var(--weight--500);
     color: var(--text-primary);
     
 }
@@ -97,8 +97,12 @@
   font-weight: bold;
   padding: 10px;
 }
+.margin-top{
+  margin-top: 10px;
+  font-size: var(--font-2);
+}
 .sub-main-header{
-    font-size: var(--font-2);
+    font-size: var(--font-1);
     margin: 0;
     color: var(--text-secondary);
     font-weight: var(--weight--600);
@@ -119,6 +123,7 @@
 }
 .margin-top{
   margin-top: 50px;
+  font-size: var(--font-1);
 }
 .partner-logos-container{
   flex-direction: column;
