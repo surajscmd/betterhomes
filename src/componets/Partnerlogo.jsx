@@ -1,6 +1,4 @@
 import React from 'react'
-import logoone from '../assets/Brigade.png'
-
 const Partnerlogo = ({imglogo}) => {
   return (
     <div>
