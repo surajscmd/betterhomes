@@ -63,7 +63,7 @@ import tia from "../assets/tiara.jpg"
 
 
   return (
-    <div className='partner-container'>
+    <div className='ourproject-container'>
         <p className='partner-header'>Our Projects</p>      
         <div className='project-container-list'> 
         {projectlist.map((data)=><Projects  url={data.url} name={data.name} locate={data.location} />)}          

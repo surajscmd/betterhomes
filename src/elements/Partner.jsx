@@ -12,9 +12,12 @@ const Partner = () => {
   return (
     <div className='partner-container'>
         <p className='partner-header'>Our Partner</p>
-        <div className='partner-logos-container'>
+        <div className='partner-scroll'>
+          <div className='partner-logos-container'>
           {partnerimg.map((data)=>  <Partnerlogo imglogo={data}/>)}
+          </div>
         </div>
+       
     </div>
   )
 }

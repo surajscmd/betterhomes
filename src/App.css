@@ -107,33 +107,12 @@
     color: var(--text-secondary);
     font-weight: var(--weight--600);
 }
-/* media querys */
-@media only screen and (max-width: 500px){
-    .main-header{
-    font-size: var(--font-2);
-    font-weight: var(--weight--500);
-    
-}
-.sub-main-header{
-    font-size: var(--font-1);
-    
-}
-.mainheader-sec{
-  margin-top: 80px;
-}
-.margin-top{
-  margin-top: 50px;
-  font-size: var(--font-1);
-}
-.partner-logos-container{
-  flex-direction: column;
-}
-}
+
 
 /* our partners logo */
 .partnerlogo{
    width: fit-content;
-   height: 7rem;
+   height: 4rem;
 }
 .partner-header{
   text-align: center;
@@ -145,12 +124,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 70px;
   padding: 7px;
 }
 .partner-container{
-  margin:  100px 20px ;
+  margin:  100px auto ;
 }
 
 /* project section */
@@ -201,25 +179,70 @@
   padding: 10px;
 }
 .project-container-list{
-  margin: 50px 0;
+  margin: 10px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
 }
+.ourproject-container{
+  margin: 0px 0;
+}
 /* media querys */
 @media only screen and (max-width: 500px){
   .propertyimg{
-    width: 350px;
+    width: 90dvw;
   }
   .property-container{
-        width: 350px;
+        width: 90dvw;
   }
   .project-container-list{
-  margin: 10px 0;
+    text-align: center;
+  width: fit-content;
   display: flex;
-  flex-direction: column;
+   flex-direction: column;
   align-items: center;
+}
+.ourproject-container{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+}
+/* media querys */
+@media only screen and (max-width: 550px){
+  .main-header{
+  font-size: var(--font-2);
+  font-weight: var(--weight--500);
+  
+}
+.sub-main-header{
+  font-size: var(--font-1);
+  
+}
+.mainheader-sec{
+margin-top: 80px;
+}
+.margin-top{
+margin-top: 50px;
+font-size: var(--font-1);
+}
+.partner-logos-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.partner-scroll{
+  width: 60dvw;
+  overflow: scroll;
+
+}
+.partner-container{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
 }
 
 }
