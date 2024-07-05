@@ -12,6 +12,7 @@
         --font-4: 4rem;
         --font-3: 3rem;
         --font-2: 2rem;
+        --f0nt-1o5: 1.5rem
         --font-1: 1rem;
   }
 
@@ -157,25 +158,97 @@
 .propertyimg{
   width: 400px;
   height: 250px;  
-    object-fit: cover;
-    border-radius: 7px;
+  object-fit: cover;
+  border-radius: 7px;
 }
+
 .propertyname{
   margin: 0;
-  font-size: var(--font-2);
+  font-size: 1.2rem;
+  font-weight: var(--weight--500);
 }
 .locationname{
   margin: 0;
   font-size: small;
   font-weight: var(--weight--500);
 }
+/* inside img */
+.property-img-container{
+  position: relative;
+}
+.property-img-type{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.1rem;
+  font-weight: var(--weight--600);
+  background-color: #dbff12;
+  padding: 5px;
+  margin-left: -10px;
+}
+.property-img-container svg{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background-color: #D3CCE3;
+  padding: 0.3rem;
+  border-radius: 4px;
+}
+.date-img-sec{
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  position: absolute;
+  bottom: 0.7rem;
+  left: 0.3rem;
+  background-color: #E9E4F0;
+  padding: 5px 5px;
+  border-radius: 5px;
+  
+}
+.amount-img-sec{
+  position: absolute;
+  bottom: 0.7rem;
+  right: 0.5rem;
+  background-color: #E9E4F0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 5px;
+  border-radius: 5px;
+ margin-bottom: -30px;
+}
+.amount{
+  margin: 0px;
+  font-size: 15px;
+  font-weight: var(--weight--700);
+}
+.launch{
+  margin: 0px;
+  font-size: 15px;
+  color: #777778;
+}
+.key-img{
+  width: 1.5rem;
+  
+}
+.date-fonts{
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0;
+}
+
+
+
+
 .property-des{
   margin: 0;
   font-size: 0.8rem;
   margin: 10px 0;
 }
 .geo-locate{
-  margin: 7px 0;
+  margin: 1rem 0;
+  color: rgb(2, 2, 171);
 }
 .btn-property{
    border:2px solid var(--accent);
@@ -204,7 +277,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 2rem;
 }
 .ourproject-container{
   margin: 0px 0;
@@ -331,12 +404,10 @@ font-size: var(--font-1);
 
   @media only screen and (max-width: 550px){
 .button-container{
-   
     justify-content: center;
      
   }
   }
-
   .icon-eta{
     height: 30px;
     color: rgb(255, 0, 0);
