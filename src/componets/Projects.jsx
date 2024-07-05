@@ -12,7 +12,9 @@ const Projects = ({url , name , locate}) => {
               <p className='locationname'>{locate}</p>
            </div>
               <p className='property-des' >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia nesciunt magni ipsum eum aspernatur minima sequi pariatur voluptatibus amet provident.</p>
-              <button className='btn-property'>Know more</button>
+              {/* <button className='btn-property'>Know more</button> */}
+
+              
         </div>
     </div>
   )
