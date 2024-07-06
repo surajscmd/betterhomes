@@ -237,6 +237,14 @@
   font-weight: 700;
   margin: 0;
 }
+.bhk-dec{
+  font-size: 12px;
+  font-weight: var(--weight--600);
+}
+.room-img{
+  width:20px ;
+  height: 18px;
+}
 
 
 
@@ -351,7 +359,7 @@ font-size: var(--font-1);
 .footer-sec{
   background-color: #71acb8;
   width: 100%;
-  height:10dvh;
+  height:8dvh;
   position: sticky;
   left: 0;
   bottom: 0;

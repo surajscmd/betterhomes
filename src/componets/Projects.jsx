@@ -1,6 +1,9 @@
 import React from 'react'
 import location from '../assets/geo.svg'
 import key from '../assets/key.svg'
+import bed from '../assets/hotel.png'
+import arrow from '../assets/box-arrow.svg'
+
 const Projects = ({url , name , locate}) => {
   return (
     <div className='property-container'>
@@ -29,6 +32,21 @@ const Projects = ({url , name , locate}) => {
              <img className='locationimg' src={location}/>
               <p className='locationname'>{locate}</p>
            </div>
+
+          <div className='flex-align'>
+          <div className='room-dec flex-align'>
+            <div><img className='room-img' src={bed}/></div>
+            <p className='bhk-dec'>2 BHK , 3 BHK</p>
+          </div>
+          
+          <div className='room-dec flex-align'>
+            <div><img className='room-img' src={arrow}/></div>
+            <p className='bhk-dec'>600 sqft - 839 sqft</p>
+          </div>
+
+          </div>
+         
+
               <p className='property-des' >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia nesciunt magni ipsum eum aspernatur minima sequi pariatur voluptatibus amet provident.</p>
               {/* <button className='btn-property'>Know more</button> */}
 
