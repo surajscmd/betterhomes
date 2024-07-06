@@ -6,10 +6,7 @@ const Footers = () => {
   return (
     <div className='footer-sec'>
          <div className='button-container'>
-          <button className='btn-eta yellow'>  <img className='icon-eta' src={mail} alt="mail"/> Enquire</button>
-      
-      
-          <button className='btn-eta green'>  <img className='icon-eta' src={whatsapp} alt="mail"/> Whatsapp</button>
+         
          </div>
     </div>
   )

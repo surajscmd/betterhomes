@@ -3,6 +3,9 @@ import location from '../assets/geo.svg'
 import key from '../assets/key.svg'
 import bed from '../assets/hotel.png'
 import arrow from '../assets/box-arrow.svg'
+import mail from "../assets/envelope.svg"
+import call from "../assets/call.svg"
+import whatsapp from "../assets/whatsapp.svg" 
 
 const Projects = ({url , name , locate}) => {
   return (
@@ -45,10 +48,15 @@ const Projects = ({url , name , locate}) => {
           </div>
 
           </div>
-         
-
-              <p className='property-des' >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia nesciunt magni ipsum eum aspernatur minima sequi pariatur voluptatibus amet provident.</p>
+        <p className='property-des' >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia nesciunt magni ipsum eum aspernatur minima sequi pariatur voluptatibus amet provident.</p>
               {/* <button className='btn-property'>Know more</button> */}
+
+                <div className='button-container'>
+                     <button className='btn-eta borleft'><img className='icon-eta' src={call} alt="mail"/>Call</button>
+                      <button className='btn-eta'><img className='icon-eta' src={mail} alt="mail"/> Enquire</button>
+                      <button className='btn-eta borright'><img className='icon-eta' src={whatsapp} alt="mail"/> Whatsapp</button>
+                 </div>
+              
 
 
         </div>

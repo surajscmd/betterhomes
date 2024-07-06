@@ -245,14 +245,40 @@
   width:20px ;
   height: 18px;
 }
+.btn-eta{
+  display: flex;
+  align-items: center;
+  width: 10rem;
+  justify-content: center;
+  gap: 10px;
+  font-size: var(--font-1);
+  font-weight:var(--weight--600);
+  color:rgb(104, 103, 103);
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.borleft{
+  border-right: 2px solid rgb(193, 192, 192);
+}
+.borright{
+  border-left: 2px solid rgb(193, 192, 192);
+}
 
-
+.button-container{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5px 7px;
+  gap: 15px;
+  padding: 5px ;
+  border-top:1px solid rgb(193, 192, 192);  
+}
 
 
 .property-des{
-  margin: 0;
   font-size: 0.8rem;
-  margin: 10px 0;
+  margin-bottom: 1rem;
 }
 .geo-locate{
   margin: 1rem 0;
@@ -363,8 +389,8 @@ font-size: var(--font-1);
   position: sticky;
   left: 0;
   bottom: 0;
- border-top-left-radius: 15px;
- border-top-right-radius: 15px ;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px ;
 }
 
 
@@ -375,40 +401,7 @@ font-size: var(--font-1);
    width: 100dvw;
   }
 
-  .btn-eta{
-    display: flex;
-    align-items: center;
-    width: 10rem;
-    justify-content: center;
-    gap: 10px;
-    font-size: var(--font-1);
-    font-weight:var(--weight--600);
-    color:rgb(0, 0, 0);
-    border: none;
-    padding: 5px 10px;
-    border-radius: 12px;
-    cursor: pointer;
-  }
-  .btn-eta:hover{
-    cursor: pointer;
-  }
-  .yellow{
-    background-color: yellow;
-  }
-  .blue{
-    background-color: rgba(255, 0, 93, 0.903);
-  }
-  .green{
-    background-color: rgb(1, 227, 1);
-  }
-  .button-container{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 10px 5px;
-    padding-bottom: 25px;
-    gap: 15px;
-    padding: 5px    
-  }
+
 
   @media only screen and (max-width: 550px){
 .button-container{
@@ -416,7 +409,8 @@ font-size: var(--font-1);
      
   }
   }
+
   .icon-eta{
-    height: 30px;
+    height: 17px;
     color: rgb(255, 0, 0);
   }
