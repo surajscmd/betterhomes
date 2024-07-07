@@ -284,19 +284,7 @@
   margin: 1rem 0;
   color: rgb(2, 2, 171);
 }
-.btn-property{
-   border:2px solid var(--accent);
-   padding: 0.7rem  0.7rem;
-   background-color: var(--accent);
-   font-size: 15px;
-   color: var(--text-primary);
-}
-.btn-property:hover{
-  border: 2px solid var(--accent);
-  background-color: transparent;
-  cursor: pointer;
-  color: var(--accent);
-}
+
 .property-container{
   margin: 10px 0;
   width: 400px;
@@ -424,6 +412,8 @@ font-size: var(--font-1);
 
 
 
+
+
   @media only screen and (max-width: 550px){
 .button-container{
     justify-content: center;
@@ -435,3 +425,79 @@ font-size: var(--font-1);
     height: 17px;
     color: rgb(255, 0, 0);
   }
+
+
+
+  /* form registration form */
+
+  .img-logop-form{
+    width: 9rem;
+  }
+
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  .input-container{
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    max-width: 90dvw;
+    margin: 30px 0;
+  }
+
+  .input-box{
+    border-bottom: 1px solid rgb(196, 196, 196) !important;
+    border: none;
+    color: rgb(149, 149, 149);
+    padding: 5px 10px;
+  }
+  .input-box::placeholder{
+    color: rgb(149, 149, 149);
+  }
+
+
+  .input-box:focus{
+    outline: 2px solid rgb(27, 149, 49) ;
+  }
+
+  .form-container{
+    border: 1px solid rgb(217, 215, 215);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 30px 50px;
+  }
+  .register-form-heading{
+    color: rgb(27, 149, 49);
+  }
+  .btn-property{
+    border:2px solid rgb(11, 202, 11);
+    padding: 0.7rem  0.7rem;
+    background-color: rgb(11, 202, 11);
+    font-size: 15px;
+    color: var(--text-primary);
+ }
+ .btn-property:hover{
+   border: 2px solid rgb(11, 202, 11);
+   background-color: transparent;
+   cursor: pointer;
+   color: rgb(11, 202, 11);
+ }
+ .terms-sec{
+   width: 80%;
+   font-size: 8px;
+   text-align: center;
+ }
+ .call-icon-form{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgb(209, 249, 101);
+  padding: 5px ;
+  font-size: 13px ;
+ }

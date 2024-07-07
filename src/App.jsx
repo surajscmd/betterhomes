@@ -5,6 +5,7 @@ import Partner from './elements/Partner'
 import Footers from './elements/Footers'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import logofive from './assets/logo.webp'
+import Form from './componets/Form'
 function App() {
 
   return (
@@ -13,8 +14,10 @@ function App() {
       <Headsec/>
       <Partner/>
       <Ourprojexts/>
+      <Form/>
       <Footers/>
-      <FloatingWhatsApp
+      <div className='float-whatsup'>
+        <FloatingWhatsApp
         phoneNumber="123456789"
         accountName="Better Home reality"
         statusMessage="we are happy to help"
@@ -24,6 +27,9 @@ function App() {
         notification
         notificationSound
       />
+
+      </div>
+      
     </div>
     
     </>
