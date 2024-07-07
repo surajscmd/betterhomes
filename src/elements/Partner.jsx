@@ -14,7 +14,7 @@ const Partner = () => {
         <p className='partner-header'>Our Partner</p>
         <div className='partner-scroll'>
           <div className='partner-logos-container'>
-          {partnerimg.map((data)=>  <Partnerlogo imglogo={data}/>)}
+          {partnerimg.map((data,i)=>  <Partnerlogo imglogo={data} key={i}/>)}
           </div>
         </div>
        

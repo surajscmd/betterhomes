@@ -14,7 +14,6 @@ function App() {
       <Headsec/>
       <Partner/>
       <Ourprojexts/>
-      <Form/>
       <Footers/>
       <div className='float-whatsup'>
         <FloatingWhatsApp

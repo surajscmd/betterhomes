@@ -7,6 +7,7 @@ import mail from "../assets/envelope.svg"
 import call from "../assets/call.svg"
 import whatsapp from "../assets/whatsapp.svg" 
 
+
 const Projects = ({url , name , locate}) => {
   return (
     <div className='property-container'>
@@ -53,7 +54,12 @@ const Projects = ({url , name , locate}) => {
 
                 <div className='button-container'>
                      <button className='btn-eta borleft'><img className='icon-eta' src={call} alt="mail"/>Call</button>
-                      <button className='btn-eta'><img className='icon-eta' src={mail} alt="mail"/> Enquire</button>
+                     <button className='btn-eta'><img className='icon-eta' src={mail} alt="mail"/> 
+                                   Enquire</button>
+                                   
+                    
+                      
+
                       <button className='btn-eta borright'><img className='icon-eta' src={whatsapp} alt="mail"/> Whatsapp</button>
                  </div>
               
