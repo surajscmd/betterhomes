@@ -53,7 +53,7 @@ const Projects = ({url , name , locate}) => {
               {/* <button className='btn-property'>Know more</button> */}
 
                 <div className='button-container'>
-                     <button className='btn-eta borleft'><img className='icon-eta' src={call} alt="mail"/>Call</button>
+                     <a href='tel:2354689807086' className='btn-eta borleft'><img className='icon-eta' src={call} alt="mail"/>Call</a>
                      <button className='btn-eta'><img className='icon-eta' src={mail} alt="mail"/> 
                                    Enquire</button>
                                    
