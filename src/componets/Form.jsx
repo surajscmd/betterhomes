@@ -27,9 +27,10 @@ const Form = ({setOpenModal}) => {
                 <textarea className='input-box your-requirement' placeholder='Your Requirements...' rows="4" cols="50" maxLength="40"></textarea>      
                 <button className='btn-property'>Pre-Register Now</button>
            </div>
+          
            <p className='terms-sec'> I authorize company representatives to Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC</p>
            
-           <p className='call-icon-form'><img className='icon-eta' src={call} alt="mail"/>888 444 272</p>
+           <a href='tel:2354689807086' className='form-call-anchor'><p className='call-icon-form'><img className='icon-eta' src={call} alt="mail"/>888 444 272</p></a>
            </div>
         </div>
       </div>
