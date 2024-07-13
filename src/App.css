@@ -542,3 +542,21 @@ font-size: var(--font-1);
   width: 100%;
   font-weight: inherit;
 }
+
+
+/* whats app icons */
+
+
+.whatsapp-container{
+  position: fixed;
+  bottom: 4rem;
+  right: 1.5rem;
+}
+.whatsapp-anchor{
+text-decoration: none;
+
+}
+.whatsappgif{
+  width: 3.6rem;
+  border-radius: 50%;
+}

@@ -55,12 +55,8 @@ const Projects = ({url , name , locate}) => {
                 <div className='button-container'>
                      <a href='tel:2354689807086' className='btn-eta borleft'><img className='icon-eta' src={call} alt="mail"/>Call</a>
                      <button className='btn-eta'><img className='icon-eta' src={mail} alt="mail"/> 
-                                   Enquire</button>
-                                   
-                    
-                      
-
-                      <button className='btn-eta borright'><img className='icon-eta' src={whatsapp} alt="mail"/> Whatsapp</button>
+                                   Enquire</button>                    
+                      <a href={"https://wa.me/9148184670?text=Hi - I Want to enquire about the property "+ " ' " + name  + " '"} className='btn-eta borright'><img className='icon-eta' src={whatsapp} alt="mail"/> Whatsapp</a>
                  </div>
               
 
