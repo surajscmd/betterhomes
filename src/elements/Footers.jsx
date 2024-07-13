@@ -9,7 +9,6 @@ import Form from '../componets/Form'
 const Footers = () => {
   
   const [modalOpen, setModalOpen] = useState(false);
-  console.log(modalOpen);
 
   return (
     <div className='relativ-sign'> 

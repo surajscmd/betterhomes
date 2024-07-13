@@ -5,6 +5,25 @@ import close from "../assets/circle.svg"
 const Form = ({setOpenModal}) => {
 
   const modelref = useRef();
+  function Submit(e) {
+    const formEle = document.querySelector("form");
+
+    const formDatab = new FormData(formEle);
+     e.preventDefault()
+     e.target.reset()
+    fetch(
+      "https://script.google.com/macros/s/AKfycbwZx2MHOfQ1KZUTQqyoBfho5-zyDFnd2xvIxwl1o10XbiYb-djxmZxhAa25suQJ1EDf/exec",
+      {
+        method: "POST",
+        body: formDatab
+      }
+    ).then((res) => res.json()).then((data) => {console.log(data);      
+      }).catch((error) => {
+        console.log(error);
+      });
+  }
+  
+
 
   const closemodel = (e) =>{
     if(modelref.current == e.target){
@@ -20,14 +39,15 @@ const Form = ({setOpenModal}) => {
         <div  className='flex-col'>  
           <img className='img-logop-form' src={logo}/>
            <h3 className='register-form-heading'>Register Here And Avail the Bestoffers!!</h3>
-           <div className='input-container'>
-                <input className='input-box' type="text"  placeholder='Name'/>
-                <input className='input-box'type="number"  placeholder='Mobile No.'/>
-                <input className='input-box'type="email"  placeholder='E-Mail Address'/>
-                <textarea className='input-box your-requirement' placeholder='Your Requirements...' rows="4" cols="50" maxLength="40"></textarea>      
-                <button className='btn-property'>Pre-Register Now</button>
-           </div>
-          
+         
+           <form className='input-container' onSubmit={(e) => Submit(e)}>
+                <input className='input-box' type="text"  placeholder='Name' name="Name" required />
+                <input className='input-box'type="tel"  placeholder='Mobile No.' name="Mobile" required />
+                <input className='input-box'type="email"  placeholder='E-Mail Address' name="Email" required/>
+                <textarea className='input-box your-requirement' placeholder='Your Requirements...' name="Message" required rows="4" cols="50" maxLength="40"></textarea>
+                {/* <input placeholder="Your Message" name="Message" type="text" /> */}
+                <button className='btn-property' type="submit">Pre-Register Now</button>
+           </form>
            <p className='terms-sec'> I authorize company representatives to Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC</p>
            
            <a href='tel:2354689807086' className='form-call-anchor'><p className='call-icon-form'><img className='icon-eta' src={call} alt="mail"/>888 444 272</p></a>
