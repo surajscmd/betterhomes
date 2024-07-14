@@ -1,9 +1,9 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import logo from '../assets/logo.webp'
 import call from "../assets/call.svg"
 import close from "../assets/circle.svg"
 const Form = ({setOpenModal}) => {
-
+  const [Success, setsuccess] = useState(false);
   const modelref = useRef();
   function Submit(e) {
     const formEle = document.querySelector("form");
@@ -17,10 +17,16 @@ const Form = ({setOpenModal}) => {
         method: "POST",
         body: formDatab
       }
-    ).then((res) => res.json()).then((data) => {console.log(data);      
+    ).then((res) => res.json()).then((data) => {console.log(data)      
       }).catch((error) => {
         console.log(error);
       });
+      setTimeout(() => {
+        setOpenModal(false);
+        
+      }, 1000);
+      setsuccess(true);
+     
   }
   
 
@@ -48,6 +54,7 @@ const Form = ({setOpenModal}) => {
                 {/* <input placeholder="Your Message" name="Message" type="text" /> */}
                 <button className='btn-property' type="submit">Pre-Register Now</button>
            </form>
+            {Success && (<div className='succes-bar'> Success !! </div>)}
            <p className='terms-sec'> I authorize company representatives to Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC</p>
            
            <a href='tel:2354689807086' className='form-call-anchor'><p className='call-icon-form'><img className='icon-eta' src={call} alt="mail"/>888 444 272</p></a>
