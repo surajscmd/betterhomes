@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import location from '../assets/geo.svg'
 import key from '../assets/key.svg'
 import bed from '../assets/hotel.png'
@@ -6,9 +6,10 @@ import arrow from '../assets/box-arrow.svg'
 import mail from "../assets/envelope.svg"
 import call from "../assets/call.svg"
 import whatsapp from "../assets/whatsapp.svg" 
-
+import Form from './Form'
 
 const Projects = ({url , name , locate}) => {
+  const [modalOpen, setModalOpen] = useState(false);
   return (
     <div className='property-container'>
         <div className='property-img-container'>
@@ -54,14 +55,15 @@ const Projects = ({url , name , locate}) => {
 
                 <div className='button-container'>
                      <a href='tel:2354689807086' className='btn-eta borleft'><img className='icon-eta' src={call} alt="mail"/>Call</a>
-                     <button className='btn-eta'><img className='icon-eta' src={mail} alt="mail"/> 
+                     <button onClick={() => setModalOpen(true)}   className='btn-eta'><img className='icon-eta' src={mail} alt="mail"/> 
                                    Enquire</button>                    
                       <a href={"https://wa.me/9148184670?text=Hi - I Want to enquire about the property "+ " ' " + name  + " '"} className='btn-eta borright'><img className='icon-eta' src={whatsapp} alt="mail"/> Whatsapp</a>
                  </div>
               
-
+          
 
         </div>
+        {modalOpen && <Form setOpenModal={setModalOpen}/>}
     </div>
   )
 }
