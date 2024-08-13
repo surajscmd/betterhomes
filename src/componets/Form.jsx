@@ -12,7 +12,7 @@ const Form = ({setOpenModal}) => {
      e.preventDefault()
      e.target.reset()
     fetch(
-      "https://script.google.com/macros/s/AKfycbwZx2MHOfQ1KZUTQqyoBfho5-zyDFnd2xvIxwl1o10XbiYb-djxmZxhAa25suQJ1EDf/exec",
+      "https://script.google.com/macros/s/AKfycbwFh9UixBLzV32Y26xQxjbwJ7KcRlnoTTh9tLDQs5V6eZUYOsJaWJhppXyYdVS-19NLtQ/exec",
       {
         method: "POST",
         body: formDatab
