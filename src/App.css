@@ -86,7 +86,7 @@
         background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.366), rgba(0, 0, 0, 0.73)) , url(./assets/b.jpg) ;
     }
     100%{
-        background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.444), rgba(0, 0, 0, 0.73)) , url(./assets/c.jpg) ;
+        background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.444), rgba(0, 0, 0, 0.73)) , url(./assets/a.jpg) ;
     }
 }
 
@@ -469,7 +469,7 @@ position: relative;
   gap: 10px;
   text-decoration: none;
   color: var(--text-secondary);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: var(--weight--600);
   background-color: transparent;
   border: none;
@@ -540,7 +540,7 @@ position: relative;
 }
 
 .copy-rights{
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: var(--weight--600);
   color: var(--light-gray);
   margin: 2rem 0;
