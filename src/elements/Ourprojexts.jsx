@@ -185,7 +185,7 @@ import tia from "../assets/tiara.jpg"
   {
     name: "Prestige Rain Tree Park" ,
     location: "Varthur",
-    url:"https://cdn.prod.website-files.com/64410f25532729fc6f592c77/65e6006809cda3bc5c494b62_prestige-clairemont.jpeg",
+    url:"https://miro.medium.com/v2/resize:fit:828/format:webp/1*7BvI4CMwzywWIqedMxDnuw.jpeg",
     date: "Dec 2026",
     price: "2.95 Crore",
     dec: "Prestige Raintree Park offers a perfect blend of luxury and comfort with its spacious apartments, world-class amenities, and lush green surroundings. Located in a prime area, it ensures excellent connectivity and a serene, high-quality living experience for residents.",

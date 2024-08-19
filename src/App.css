@@ -380,7 +380,6 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
 .borright{
   border-left: 2px solid rgb(193, 192, 192);
 }
-
 .button-container{
   display: flex;
   justify-content: space-evenly;
@@ -389,8 +388,6 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
   padding: 5px ;
   border-top:1px solid rgb(193, 192, 192);  
 }
-
-
 .property-des{
   font-size: 0.8rem;
   margin-bottom: 1rem;
@@ -399,7 +396,6 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
   margin: 1rem 0;
   color: rgb(2, 2, 171);
 }
-
 .property-container{
   margin: 10px 0;
   width: 400px;
@@ -442,7 +438,7 @@ position: relative;
  display: flex;
  flex-direction: column;
  align-items: center;
- width: 100%;
+ width: 100dvw;
 }
 
 }
@@ -451,64 +447,57 @@ position: relative;
 /* footer section */
 
 .footer-sec{
-  width: 100%;
+  width: 100dvw;
   max-height: fit-content; 
+  background: #ee0979;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  padding: 0.7rem;
 }
-
 .relativ-sign{
     position: fixed;  
-    bottom: 1.3rem;
+    bottom: 0px;
     z-index: 1; 
     behavior: 'smooth'
-
 }
-.btn-section{ 
+.btn-footer-sec{
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 10px;
-  margin: 10px 0;
-
-}
-.btn-foot{
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  width: 10rem;
-  height: 3rem;
-  font-weight: 500;
-  font-size: 16px; 
-  color: #000000;
-  cursor: pointer;
   text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  font-weight: var(--weight--600);
+  background-color: transparent;
+  border: none;
+  width: 50%;
+  justify-content: center;
+  cursor: pointer;
 }
-.blue{
-  background-color: rgb(141, 141, 255);
+.btn-section{ 
+  margin: 0px 0;
+  display: flex;
+  justify-content: space-evenly;
 }
-.yellow{
-  background-color: yellow;
+.border-l{
+  border-left: 2px solid var(--charcoal-gray);
 }
-
+.border-r{
+  border-right: 2px solid var(--charcoal-gray);
+}
   .page-container{
    display: flex;
    flex-direction: column;
    align-items: center;
    width: 100dvw;
   }
-
-
-
-
-
   @media only screen and (max-width: 550px){
 .button-container{
     justify-content: center;
      
   }
   }
-
   .icon-eta{
     height: 17px;
     color: rgb(255, 0, 0);
@@ -610,7 +599,6 @@ position: relative;
     height: 100vh;
     background-color: rgba(51, 53, 74, 0.678);
     position: fixed;
-   
     z-index: 10;
     top: 50%; 
     left: 50%;

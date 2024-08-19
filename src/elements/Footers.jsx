@@ -3,6 +3,7 @@ import mail from "../assets/envelope.svg"
 import call from "../assets/call.svg"
 import 'reactjs-popup/dist/index.css';
 import Form from '../componets/Form'
+import { MailPlus, PhoneCall } from 'lucide-react';
 
 const Footers = () => {
   
@@ -28,9 +29,11 @@ const Footers = () => {
     {visible && (<div className='relativ-sign'> 
      <div className='footer-sec'>
         <div className='btn-section'>
-           <a href='tel:2354689807086' className='btn-foot blue'><img className='icon-eta' src={call} alt="mail"/>Call</a>
-         <button onClick={() => setModalOpen(true)} className='btn-foot yellow'><img className='icon-eta' src={mail} alt="mail"/> Enquire</button> 
-         {modalOpen && <Form setOpenModal={setModalOpen}/>}
+                <a href='tel:2354689807086' className='btn-footer-sec border-r'><PhoneCall />Call</a>
+              
+                <button onClick={() => setModalOpen(true)} className='btn-footer-sec border-l'><MailPlus /> Enquire</button> 
+                {modalOpen && <Form setOpenModal={setModalOpen}/>}
+                 
         </div>       
       </div>
     </div>)}
