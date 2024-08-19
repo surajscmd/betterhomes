@@ -6,6 +6,7 @@ import Footers from './elements/Footers'
 import WhatsappIcon from './elements/WhatsappIcon'
 import { Footsec } from './componets/Footsec'
 import VisionMission from './componets/Vision'
+import Navbar from './componets/Navbar'
 function App() {
 
   return (
@@ -13,10 +14,10 @@ function App() {
     <div className='page-container'>
       <Headsec/>
       <Partner/>
-     
       <Ourprojexts/>
       <VisionMission/>
       <Footsec/>
+      <Navbar/>
       <Footers/>   
       <WhatsappIcon/>
     </div>
