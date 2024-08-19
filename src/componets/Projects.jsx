@@ -63,11 +63,8 @@ const Projects = ({dataobject}) => {
                      <a href='tel:2354689807086' className='btn-eta borleft'><img className='icon-eta' src={call} alt="mail"/>Call</a>
                      <button onClick={() => setModalOpen(true)}   className='btn-eta'><img className='icon-eta' src={mail} alt="mail"/> 
                                    Enquire</button>                    
-                      <a href={"https://wa.me/9148184670?text=Hi - I Want to enquire about the property "+ " ' " + name  + " '"} className='btn-eta borright'><img className='icon-eta' src={whatsapp} alt="mail"/> Whatsapp</a>
-                 </div>
-              
-          
-
+                      <a href={"https://wa.me/9148184670?text=Hi - I Want to enquire about the property "+ " ' " + dataobject?.name + " '"} className='btn-eta borright'><img className='icon-eta' src={whatsapp} alt="mail"/> Whatsapp</a>
+                 </div> 
         </div>
         {modalOpen && <Form setOpenModal={setModalOpen}/>}
     </div>

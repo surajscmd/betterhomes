@@ -1,19 +1,11 @@
 import React from 'react'
 import Projects from '../componets/Projects'
-import blubelle from '../assets/Blubelle.jpg'
-import atmos from "../assets/atmos.jpg"
-import cri from "../assets/cri.jpg"
-import mekri from "../assets/mekri.jpg"
-import purva from "../assets/purvankara.jpg"
-import spring from "../assets/spring.jpg"
-import symp from "../assets/sympony.jpg"
-import zen from "../assets/zenum.jpg"
-import tia from "../assets/tiara.jpg"
+
  const Ourprojexts = () => {
   const projectlist = [{
     name: "Purva Meraki",
     location: "Hosapalaya, Muneshwara Nagar HSR Layout",
-    url:mekri,
+    url:"https://teja12.kuikr.com/is/a/c/430x200/gallery_images/original/cf639c358835be2.gif",
     date: "31-10-2027",
     price: "4.14 Crore ",
     dec: "Purva Meraki in HSR Layout, South East Bengaluru, offers world-class amenities including an Infinity Pool, Skywalk, Party Lawn, Yoga Deck, Barbeque Area, Outdoor Gym, Hammocks, Kids Play Area, and 76% lush green open space",

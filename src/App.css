@@ -406,11 +406,13 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
   padding: 10px;
 }
 .project-container-list{
-  margin: 10px 0;
+  margin: 10px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  width: 85dvw;
+  
 }
 .ourproject-container{
   margin: 2rem 0;
@@ -486,12 +488,17 @@ position: relative;
 .border-r{
   border-right: 2px solid var(--charcoal-gray);
 }
+
+
+/* page -container in app section */
   .page-container{
    display: flex;
    flex-direction: column;
    align-items: center;
    width: 100dvw;
   }
+
+
   @media only screen and (max-width: 550px){
 .button-container{
     justify-content: center;
@@ -502,8 +509,53 @@ position: relative;
     height: 17px;
     color: rgb(255, 0, 0);
   }
+/* footer with logo container */
 
+.footsec-continer{
+  height: fit-content;
+  width: 100dvw;
+  text-align: center;
+  color: var(--light-gray);
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.footsec-logo{
+  width: 10rem;
+}
+.foot-sec-logo{
+  margin: 0 auto;
+}
 
+.foot-copy-sec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border-top: 1px solid var(--khaki);
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.copy-rights{
+  font-size: 1.2rem;
+  font-weight: var(--weight--600);
+  color: var(--light-gray);
+  margin: 2rem 0;
+}
+.info-dis{
+  font-size: 0.8rem;
+  color: var(--light-gray);
+  margin: 0rem 0;
+}
+.disc{
+  text-decoration: underline;
+  font-size: 1.1rem;
+  color: var(--coral);
+  margin: 0rem 0;
+}
 
   /* form registration form */
 

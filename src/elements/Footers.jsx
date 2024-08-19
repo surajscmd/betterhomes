@@ -29,11 +29,9 @@ const Footers = () => {
     {visible && (<div className='relativ-sign'> 
      <div className='footer-sec'>
         <div className='btn-section'>
-                <a href='tel:2354689807086' className='btn-footer-sec border-r'><PhoneCall />Call</a>
-              
-                <button onClick={() => setModalOpen(true)} className='btn-footer-sec border-l'><MailPlus /> Enquire</button> 
+                <a href='tel:2354689807086' className='btn-footer-sec border-r'><PhoneCall />Call Now</a>
+                <button onClick={() => setModalOpen(true)} className='btn-footer-sec border-l'><MailPlus /> Enquire Now</button> 
                 {modalOpen && <Form setOpenModal={setModalOpen}/>}
-                 
         </div>       
       </div>
     </div>)}

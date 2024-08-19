@@ -4,6 +4,7 @@ import Ourprojexts from './elements/Ourprojexts'
 import Partner from './elements/Partner'
 import Footers from './elements/Footers'
 import WhatsappIcon from './elements/WhatsappIcon'
+import { Footsec } from './componets/Footsec'
 function App() {
 
   return (
@@ -12,6 +13,7 @@ function App() {
       <Headsec/>
       <Partner/>
       <Ourprojexts/>
+      <Footsec/>
       <Footers/>   
       <WhatsappIcon/>
     </div>
