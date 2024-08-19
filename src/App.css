@@ -751,7 +751,7 @@ text-decoration: none;
 @media (max-width: 480px){
   .vision-mission-container{
     width: 100dvw;
-    height: 100dvh;
+    height: 50rem;
     display: flex;
     flex-direction: column;
     align-items: center;
