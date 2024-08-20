@@ -7,10 +7,10 @@ const Navbar = () => {
   
     const toggleVisible = () => { 
       const scrolled = document.documentElement.scrollTop; 
-      if (scrolled > 500){ 
+      if (scrolled > 300){ 
         setVisible(true) 
       }  
-      else if (scrolled <= 500){ 
+      else if (scrolled <= 300){ 
         setVisible(false) 
       } 
     };
