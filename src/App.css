@@ -510,10 +510,10 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
   justify-content: center;
   border-top:1px solid rgb(193, 192, 192);  
   align-items: center;
-  margin: 0.1rem auto;
   background:var(--light-gray);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
+  width:100%;
 }
 
 
@@ -668,7 +668,7 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
     flex-direction: column; 
     gap: 20px;
     width: 100%;
-    margin: 5px 0;
+    margin: 5px auto;
   }
 
   .succes-bar{
@@ -702,7 +702,7 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
     height: fit-content;
     max-width: 30rem;
     height:fit-content;
-    padding:  30px  50px ;
+    padding:  30px  55px ;
     background-color: #fff;
   }
   .image-close{
@@ -760,6 +760,9 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
   width: 80%;
   margin: 1px auto;
   font-weight: inherit;
+}
+.form-container{
+  margin-top: 5rem;
 }
 
 
@@ -843,9 +846,7 @@ text-decoration: none;
     align-items: center;
     justify-content: center;
   }
-  .form-container{
-     margin-top: 5rem;
-  }
+  
   .vision-mission-content{
     width: 100%;
     height: 50%;
