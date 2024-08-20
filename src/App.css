@@ -519,12 +519,6 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
 
 /* media querys */
 @media only screen and (max-width: 500px){
-  .propertyimg{
-    width: 90dvw;
-  }
-  .property-container{
-        width: 90dvw;
-  }
   .project-container-list{
     width: fit-content;
     display: flex;
@@ -594,13 +588,6 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
    width: 100dvw;
   }
 
-
-  @media only screen and (max-width: 550px){
-.button-container{
-    justify-content: center;
-     
-  }
-  }
  
 /* footer with logo container */
 
