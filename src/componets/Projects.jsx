@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import whatsapp from "../assets/whatsapp.png" 
 import Form from './Form'
-import { BedDouble, CircleEllipsis, Group, KeySquare, LandPlot, MailSearch, MapPinHouse, Phone, PhoneForwarded } from 'lucide-react'
+import { BedDouble,  Group, KeySquare, LandPlot, MailSearch, MapPinHouse, Phone } from 'lucide-react'
 
 const Projects = ({dataobject}) => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -66,8 +66,8 @@ const Projects = ({dataobject}) => {
               
          <div className='button-container'>  
            <button onClick={() => setModalOpen(true)}  className='btn-eta  borleft'><MailSearch  size={19} color="var(--charcoal-gray)" />Enquire</button>    
-           <a href='tel:2354689807086' className='btn-eta '><Phone size={18} color="var(--charcoal-gray)" />Call</a>                
-           <a href={"https://wa.me/9148184670?text=Hi - I Want to enquire about the property "+ " ' " + dataobject?.name + " '"} className='btn-eta borright'><img className='icon-eta' src={whatsapp} alt="mail"/> Whatsapp</a>
+           <a href='tel:8884447122' className='btn-eta '><Phone size={18} color="var(--charcoal-gray)" />Call</a>                
+           <a href={"https://wa.me/8884447122?text=Hi - I Want to enquire about the property "+ " ' " + dataobject?.name + " '"} className='btn-eta borright'><img className='icon-eta' src={whatsapp} alt="mail"/> Whatsapp</a>
          </div> 
         
         {modalOpen && <Form setOpenModal={setModalOpen}/>}
