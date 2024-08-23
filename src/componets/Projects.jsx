@@ -67,7 +67,7 @@ const Projects = ({dataobject}) => {
          <div className='button-container'>  
            <button onClick={() => setModalOpen(true)}  className='btn-eta  borleft'><MailSearch  size={19} color="var(--charcoal-gray)" />Enquire</button>    
            <a href='tel:8884447122' className='btn-eta '><Phone size={18} color="var(--charcoal-gray)" />Call</a>                
-           <a href={"https://wa.me/8884447122?text=Hi - I Want to enquire about the property "+ " ' " + dataobject?.name + " '"} className='btn-eta borright'><img className='icon-eta' src={whatsapp} alt="mail"/> Whatsapp</a>
+           <a href={"https://wa.me/+918884447122?text=Hi - I Want to enquire about the property "+ " ' " + dataobject?.name + " '"} className='btn-eta borright'><img className='icon-eta' src={whatsapp} alt="mail"/> Whatsapp</a>
          </div> 
         
         {modalOpen && <Form setOpenModal={setModalOpen}/>}
