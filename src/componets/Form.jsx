@@ -56,7 +56,7 @@ const Form = ({setOpenModal}) => {
             {Success && (<div className='succes-bar'> Success !! </div>)}
            <p className='terms-sec'> I authorize company representatives to Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC</p>
            
-           <a href='tel:8884447122' className='form-call-anchor'><p className='call-icon-form'><PhoneCall />888 444 272</p></a>
+           <a href='tel:8884447122' className='form-call-anchor'><p className='call-icon-form'><PhoneCall />888 444 7122</p></a>
            </div>
         </div>
       </div>
