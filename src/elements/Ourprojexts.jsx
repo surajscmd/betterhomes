@@ -89,7 +89,7 @@ import Projects from '../componets/Projects'
   {
     name: "Purva Orinted Grand" ,
     location: "Lalbhag Road",
-    url:"https://houssed.com/assets/projects/images/53f7659f0819013aadbea2430d5d4d87.jpg",
+    url:"https://www.homznspace.com/wp-content/uploads/2022/05/Main-Elevation-Purva-Orient-Grand.jpg",
     date: "june 2027 ",
     price: "5.5 Crore",
     dec: "Experience luxury and innovation at Purva Oriented Grand. Prime location, state-of-the-art amenities, eco-friendly design, and exclusive facilities like infinity pool and spa offer a sophisticated lifestyle with top-notch security and personalized service.",
